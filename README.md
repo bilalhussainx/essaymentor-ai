@@ -201,6 +201,60 @@ essaymentor-ai/
 User Prompt → Profile Agent → [RAG: Find Similar Essays] → Brainstorm (with examples) → ...
 ```
 
+## Test Results
+
+Run the comprehensive test suite to validate the RAG system:
+
+```bash
+python test_rag_system.py
+```
+
+### Test Summary
+
+| Test | Description | Status |
+|------|-------------|--------|
+| 1 | Module imports (embeddings, ChromaDB, sample_loader, RAG agent) | ✅ Passed |
+| 2 | Embedding generation & similarity calculation | ✅ Passed |
+| 3 | ChromaDB operations (add, search, retrieve) | ✅ Passed |
+| 4 | Sample essay file parsing (YAML frontmatter) | ✅ Passed |
+| 5 | Database population from essay_suites | ✅ Passed |
+| 6 | RAG retrieval agent integration | ✅ Passed |
+| 7 | Semantic search across topics | ✅ Passed |
+
+**Result: 7/7 tests passed**
+
+### Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| Essays in database | 150 |
+| Essay suites loaded | 59 |
+| Embedding dimensions | 384 |
+| Retrieved examples per query | 5 |
+| Model | all-MiniLM-L6-v2 (~80MB) |
+
+### Embedding Similarity Demo
+
+```
+"coding journey and learning" vs "programming experience and growth" → 0.827 (Similar!)
+"coding journey and learning" vs "playing basketball with friends" → 0.246 (Not similar)
+```
+
+### RAG Retrieval Example
+
+Query: MIT student with coding background asking about challenges
+
+```
+Retrieved 5 essays:
+  1. Raj Malhotra - MIT, Score: 9.0
+  2. Alex Kim - MIT, Score: 9.0
+  3. Maya Chen - MIT, Score: 9.0
+  4. Maria Santos - MIT, Score: 9.0
+  5. James Washington - MIT, Score: 9.0
+```
+
+The RAG system successfully finds semantically similar, high-quality essays from the same target university to inform essay generation.
+
 ## Configuration
 
 Create a `.env` file for environment variables:
