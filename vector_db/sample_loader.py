@@ -123,10 +123,14 @@ class SampleEssayLoader:
             'suite_id': essay_path.parent.name,
         }
 
-        # Add profile info
+        # Add profile info (flatten nested dicts to strings)
         background = profile.get('background', {})
-        metadata['demographics'] = background.get('demographics', '')
-        metadata['location'] = background.get('location', '')
+        if isinstance(background, dict):
+            metadata['demographics'] = str(background.get('demographics', ''))
+            metadata['location'] = str(background.get('location', ''))
+        else:
+            metadata['demographics'] = ''
+            metadata['location'] = ''
 
         # Add themes
         themes = self.extract_themes_from_profile(profile)
