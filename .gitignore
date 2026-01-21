@@ -35,3 +35,10 @@ outputs/*.json
 models/
 essay_model_lora/
 essay_model_merged/
+
+# Vector Database (auto-generated, can be recreated)
+chroma_db/
+demo_chroma_db/
+
+# Virtual environments
+venv_py312/

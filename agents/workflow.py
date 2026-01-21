@@ -1,89 +1,158 @@
+"""
+Multi-Agent Essay Generation Workflow
+Enhanced with RAG (Retrieval-Augmented Generation)
+
+Flow: Profile → RAG Retrieval → Research → Brainstorm → Outline → Draft → Critique
+"""
+
 from langgraph.graph import StateGraph, END
 from agents.state import EssayState
+
+# Import all agents
+from agents.profile_agent import profile_agent
+from agents.rag_retrieval_agent import rag_retrieval_agent  # NEW - RAG Agent
 from agents.research_agent import research_agent
 from agents.brainstorm_agent import brainstorm_agent
 from agents.outline_agent import outline_agent
 from agents.draft_agent import draft_agent
 from agents.critique_agent import critique_agent
 
+
 def create_essay_workflow():
     """
-    Create the complete 5-agent essay generation workflow.
-    
-    Flow: Research → Brainstorm → Outline → Draft → Critique → End
+    Creates the complete 7-agent workflow with RAG retrieval.
+
+    Flow: Profile → RAG → Research → Brainstorm → Outline → Draft → Critique
+
+    The RAG agent retrieves similar successful essays from the vector database
+    to provide context for the brainstorm and outline agents.
     """
-    # Create the graph
+
     workflow = StateGraph(EssayState)
-    
-    # Add all 5 agents as nodes
-    workflow.add_node("research", research_agent)
-    workflow.add_node("brainstorm", brainstorm_agent)
-    workflow.add_node("outline", outline_agent)
-    workflow.add_node("draft", draft_agent)
-    workflow.add_node("critique", critique_agent)
-    
-    # Define the flow (linear for now)
+
+    # Add all agents as nodes
+    workflow.add_node("profile", profile_agent)           # Agent 0 - Profile analysis
+    workflow.add_node("rag", rag_retrieval_agent)         # Agent 1 - RAG retrieval (NEW)
+    workflow.add_node("research", research_agent)         # Agent 2 - Prompt analysis
+    workflow.add_node("brainstorm", brainstorm_agent)     # Agent 3 - Idea generation
+    workflow.add_node("outline", outline_agent)           # Agent 4 - Structure
+    workflow.add_node("draft", draft_agent)               # Agent 5 - Writing
+    workflow.add_node("critique", critique_agent)         # Agent 6 - Feedback
+
+    # Define linear flow
+    workflow.set_entry_point("profile")
+    workflow.add_edge("profile", "rag")        # Profile → RAG (retrieve examples)
+    workflow.add_edge("rag", "research")       # RAG → Research
     workflow.add_edge("research", "brainstorm")
     workflow.add_edge("brainstorm", "outline")
     workflow.add_edge("outline", "draft")
     workflow.add_edge("draft", "critique")
     workflow.add_edge("critique", END)
-    
-    # Set the entry point
-    workflow.set_entry_point("research")
-    
-    # Compile and return
+
     return workflow.compile()
 
-def run_essay_generation(prompt: str, user_context: str = None) -> dict:
+
+def create_essay_workflow_without_rag():
     """
-    Convenience function to run the full workflow.
+    Creates the workflow WITHOUT RAG for comparison/testing.
+
+    Flow: Profile → Research → Brainstorm → Outline → Draft → Critique
+    """
+
+    workflow = StateGraph(EssayState)
+
+    workflow.add_node("profile", profile_agent)
+    workflow.add_node("research", research_agent)
+    workflow.add_node("brainstorm", brainstorm_agent)
+    workflow.add_node("outline", outline_agent)
+    workflow.add_node("draft", draft_agent)
+    workflow.add_node("critique", critique_agent)
+
+    workflow.set_entry_point("profile")
+    workflow.add_edge("profile", "research")
+    workflow.add_edge("research", "brainstorm")
+    workflow.add_edge("brainstorm", "outline")
+    workflow.add_edge("outline", "draft")
+    workflow.add_edge("draft", "critique")
+    workflow.add_edge("critique", END)
+
+    return workflow.compile()
+
+def run_essay_generation(
+    prompt: str,
+    student_profile: dict,
+    target_university: str,
+    essay_type: str = "common_app",
+    word_count: int = 650,
+    other_essays: list = None
+) -> dict:
+    """
+    Convenience function to run complete workflow
     
     Args:
-        prompt: The college essay prompt
-        user_context: Optional context about the student
+        prompt: Essay prompt
+        student_profile: Student's background and experiences
+        target_university: Target school (MIT, Harvard, etc.)
+        essay_type: Type of essay (common_app, supplement_1, etc.)
+        word_count: Target word count
+        other_essays: Other essays in this application suite
     
     Returns:
-        Final state with all agent outputs
+        Final state with essay and critique
     """
-    # Create the workflow
-    app = create_essay_workflow()
     
-    # Initial state
-    initial_state = {
+    workflow = create_essay_workflow()
+    
+    initial_state: EssayState = {
         "prompt": prompt,
-        "user_context": user_context,
-        "research_analysis": "",
-        "brainstorm_ideas": [],
-        "selected_idea": "",
-        "essay_outline": "",
-        "essay_draft": "",
-        "essay_critique": "",
-        "current_agent": "research",
-        "agent_times": {},
-        "messages": []
+        "student_profile": student_profile,
+        "target_university": target_university,
+        "essay_type": essay_type,
+        "word_count": word_count,
+        "other_essays_in_suite": other_essays or [],
+        "current_agent": "profile"
     }
     
-    # Run the workflow
-    print("\n" + "="*70)
-    print(" ESSAY MENTOR AI - MULTI-AGENT ESSAY GENERATION")
-    print("="*70)
-    print(f"\nPrompt: {prompt}\n")
-    
-    final_state = app.invoke(initial_state)
-    
-    # Print summary
-    print("\n" + "="*70)
-    print(" WORKFLOW COMPLETE - SUMMARY")
-    print("="*70)
-    
-    total_time = sum(final_state['agent_times'].values())
-    
-    print(f"\n⏱️  Total Time: {total_time:.1f}s")
-    print(f"\n📊 Agent Timings:")
-    for agent, time_taken in final_state['agent_times'].items():
-        print(f"   - {agent.capitalize()}: {time_taken:.1f}s")
-    
-    print(f"\n📝 Essay Word Count: {len(final_state['essay_draft'].split())} words")
-    
-    return final_state
+    result = workflow.invoke(initial_state)
+
+    return result
+
+
+def run_essay_generation_without_rag(
+    prompt: str,
+    student_profile: dict,
+    target_university: str,
+    essay_type: str = "common_app",
+    word_count: int = 650,
+    other_essays: list = None
+) -> dict:
+    """
+    Run essay generation WITHOUT RAG for comparison testing.
+
+    Args:
+        prompt: Essay prompt
+        student_profile: Student's background and experiences
+        target_university: Target school (MIT, Harvard, etc.)
+        essay_type: Type of essay (common_app, supplement_1, etc.)
+        word_count: Target word count
+        other_essays: Other essays in this application suite
+
+    Returns:
+        Final state with essay and critique
+    """
+
+    workflow = create_essay_workflow_without_rag()
+
+    initial_state: EssayState = {
+        "prompt": prompt,
+        "student_profile": student_profile,
+        "target_university": target_university,
+        "essay_type": essay_type,
+        "word_count": word_count,
+        "other_essays_in_suite": other_essays or [],
+        "current_agent": "profile"
+    }
+
+    result = workflow.invoke(initial_state)
+
+    return result

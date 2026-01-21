@@ -1,13 +1,13 @@
 # EssayMentor AI
 
-A multi-agent AI system for generating personalized college application essays using local LLMs. Built with LangGraph and Ollama.
+A multi-agent AI system for generating personalized college application essays using local LLMs. Built with LangGraph, Ollama, and RAG (Retrieval-Augmented Generation).
 
 ## Overview
 
-EssayMentor AI uses a 6-agent pipeline to generate high-quality, personalized college essays:
+EssayMentor AI uses a 7-agent pipeline with RAG to generate high-quality, personalized college essays:
 
 ```
-Profile → Research → Brainstorm → Outline → Draft → Critique
+Profile → RAG Retrieval → Research → Brainstorm → Outline → Draft → Critique
 ```
 
 Each agent specializes in a specific part of the essay writing process:
@@ -15,15 +15,18 @@ Each agent specializes in a specific part of the essay writing process:
 | Agent | Role |
 |-------|------|
 | **Profile** | Analyzes student background, selects compelling experiences, aligns with target university values |
+| **RAG Retrieval** | Finds similar successful essays from vector database to inform generation |
 | **Research** | Analyzes the essay prompt type and requirements |
-| **Brainstorm** | Generates creative angles and approaches |
-| **Outline** | Creates structured essay outline |
+| **Brainstorm** | Generates creative angles and approaches using retrieved examples |
+| **Outline** | Creates structured essay outline based on successful patterns |
 | **Draft** | Writes the complete essay |
 | **Critique** | Provides detailed feedback and suggestions |
 
 ## Features
 
-- **Multi-Agent Architecture**: 6 specialized agents working in sequence via LangGraph
+- **Multi-Agent Architecture**: 7 specialized agents working in sequence via LangGraph
+- **RAG Integration**: Retrieves similar successful essays to inform generation
+- **Vector Database**: ChromaDB stores and searches essays by semantic similarity
 - **University Personalization**: Tailored essays for specific universities (MIT, Harvard, Stanford, etc.)
 - **Student Profile Matching**: Uses student experiences, background, and achievements
 - **Local LLM Support**: Runs entirely on local hardware via Ollama
@@ -61,11 +64,16 @@ ollama serve
 ollama pull llama3.1:8b
 ```
 
+5. Populate the vector database with sample essays:
+```bash
+python -m vector_db.sample_loader
+```
+
 ## Usage
 
-### Multi-Agent Essay Generation
+### Multi-Agent Essay Generation (with RAG)
 
-Run the complete 6-agent workflow:
+Run the complete 7-agent workflow:
 
 ```python
 from agents.workflow import run_essay_generation
@@ -115,6 +123,35 @@ python essay_cli.py improve outputs/essay_20260106.md
 python essay_cli.py status
 ```
 
+### Vector Database Commands
+
+**Load essays into database:**
+```bash
+python -m vector_db.sample_loader
+```
+
+**Clear and reload database:**
+```bash
+python -m vector_db.sample_loader --clear
+```
+
+**Test embeddings:**
+```bash
+python -m vector_db.embeddings
+```
+
+**Test ChromaDB:**
+```bash
+python -m vector_db.chromadb_manager
+```
+
+### Evaluation
+
+**Compare RAG vs non-RAG performance:**
+```bash
+python -m evaluation.rag_comparison
+```
+
 ### Writing Styles
 
 - `vulnerable` - Authentic vulnerability, emotional honesty
@@ -127,19 +164,41 @@ python essay_cli.py status
 ```
 essaymentor-ai/
 ├── agents/
-│   ├── workflow.py          # LangGraph workflow orchestration
-│   ├── state.py             # State definitions
-│   ├── profile_agent.py     # Student profile analysis
-│   ├── research_agent.py    # Prompt analysis
-│   ├── brainstorm_agent.py  # Idea generation
-│   ├── outline_agent.py     # Essay structure
-│   ├── draft_agent.py       # Essay writing
-│   ├── critique_agent.py    # Essay feedback
-│   └── ollama_helper.py     # LLM interface
-├── essay_cli.py             # CLI application
-├── university_profiles.json # University-specific preferences
-├── outputs/                 # Generated essays
+│   ├── workflow.py            # LangGraph workflow orchestration
+│   ├── state.py               # State definitions
+│   ├── profile_agent.py       # Student profile analysis
+│   ├── rag_retrieval_agent.py # RAG - retrieves similar essays
+│   ├── research_agent.py      # Prompt analysis
+│   ├── brainstorm_agent.py    # Idea generation (RAG-enhanced)
+│   ├── outline_agent.py       # Essay structure (RAG-enhanced)
+│   ├── draft_agent.py         # Essay writing
+│   ├── critique_agent.py      # Essay feedback
+│   └── ollama_helper.py       # LLM interface
+├── vector_db/
+│   ├── embeddings.py          # Text to vector conversion
+│   ├── chromadb_manager.py    # Vector database interface
+│   └── sample_loader.py       # Load essays into database
+├── evaluation/
+│   └── rag_comparison.py      # RAG vs non-RAG comparison
+├── data/
+│   └── essay_suites/          # Sample successful essays
+├── essay_cli.py               # CLI application
+├── university_profiles.json   # University-specific preferences
+├── outputs/                   # Generated essays
+├── chroma_db/                 # Vector database (auto-generated)
 └── requirements.txt
+```
+
+## How RAG Works
+
+1. **Embedding Generation**: Essays are converted to 384-dimensional vectors using sentence-transformers
+2. **Vector Storage**: ChromaDB stores essays with their embeddings and metadata
+3. **Semantic Search**: When generating a new essay, similar successful essays are retrieved
+4. **Context Augmentation**: Retrieved essays inform the brainstorm and outline agents
+5. **Quality Improvement**: Agents learn from successful patterns without copying
+
+```
+User Prompt → Profile Agent → [RAG: Find Similar Essays] → Brainstorm (with examples) → ...
 ```
 
 ## Configuration
@@ -155,6 +214,8 @@ MODEL=llama3.1:8b
 - **LangGraph** - Agent orchestration and workflow management
 - **LangChain** - LLM integration framework
 - **Ollama** - Local LLM inference
+- **ChromaDB** - Vector database for RAG
+- **Sentence-Transformers** - Text embeddings
 - **Typer** - CLI framework
 - **Rich** - Terminal formatting
 
