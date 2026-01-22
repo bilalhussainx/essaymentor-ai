@@ -13,9 +13,9 @@ Built with **Django REST Framework**, **ReactJS**, **PostgreSQL**, **WebSocket s
 
 ---
 
-## Demo
+<img width="1912" height="1107" alt="readme" src="https://github.com/user-attachments/assets/baecb463-26ad-407b-8bea-435662d9073a" />
+<img width="1918" height="1031" alt="readme2" src="https://github.com/user-attachments/assets/ce44f407-21f4-48bb-89a0-22dd52430a6e" />
 
-https://github.com/user-attachments/assets/demo-video-placeholder
 
 ---
 
