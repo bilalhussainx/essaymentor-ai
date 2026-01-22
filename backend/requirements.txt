@@ -1,0 +1,32 @@
+# Django Core
+Django==4.2.16
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+
+# Authentication
+djangorestframework-simplejwt==5.3.1
+
+# WebSocket Support
+channels==4.1.0
+channels-redis==4.2.0
+daphne==4.1.2
+
+# Task Queue
+celery==5.4.0
+redis==5.0.8
+django-celery-beat==2.6.0
+
+# Database
+psycopg2-binary==2.9.9
+
+# Existing project dependencies (for agent integration)
+langchain>=0.2.0
+langgraph>=0.2.0
+chromadb==0.4.22
+sentence-transformers==2.3.1
+requests>=2.31.0
+
+# Utilities
+python-dotenv==1.0.1
+gunicorn==22.0.0
+uvicorn==0.30.6

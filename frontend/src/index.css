@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for ChatGPT-like UI */
+@layer components {
+  .message-bubble {
+    @apply max-w-[80%] rounded-2xl px-4 py-3;
+  }
+
+  .message-user {
+    @apply bg-primary-600 text-white ml-auto;
+  }
+
+  .message-assistant {
+    @apply bg-gray-100 text-gray-900;
+  }
+
+  .message-system {
+    @apply bg-yellow-50 text-yellow-800 border border-yellow-200 text-sm;
+  }
+
+  .agent-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .agent-badge-active {
+    @apply bg-blue-100 text-blue-800 animate-pulse;
+  }
+
+  .agent-badge-complete {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .agent-badge-pending {
+    @apply bg-gray-100 text-gray-500;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Typing animation */
+@keyframes typing {
+  0%, 60%, 100% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.typing-dot {
+  animation: typing 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}

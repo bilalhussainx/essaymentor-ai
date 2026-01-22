@@ -1,0 +1,1101 @@
+{
+  "MIT": {
+    "name": "Massachusetts Institute of Technology",
+    "location": "Cambridge, MA",
+    "values": [
+      "Hands-on making and building (mens et manus - mind and hand)",
+      "Collaboration over competition",
+      "Solving real-world problems through innovation",
+      "Intellectual risk-taking and resilience",
+      "Diversity of thought and perspective",
+      "Using science and technology for social good"
+    ],
+    "culture": "Maker culture, hacker ethos, collaborative problem-solving, intense but supportive, pranks and traditions, IHTFP spirit",
+    "essay_preferences": {
+      "style": "Technical depth made accessible, authentic maker culture, process over polish, show the work not just results",
+      "what_works": [
+        "Building/fixing/making things with your hands",
+        "Technical problem-solving with real community impact",
+        "Collaboration and teaching others",
+        "Failures that led to learning and iteration",
+        "Using technology to help underserved communities",
+        "Curiosity-driven exploration and tinkering",
+        "Specific technical details that show genuine engagement",
+        "Interdisciplinary approaches (tech + art, CS + social justice)"
+      ],
+      "red_flags": [
+        "Working alone without collaboration or sharing knowledge",
+        "Theoretical interest without hands-on application",
+        "Achievements listed without showing process or failure",
+        "Trying to sound impressive rather than authentic",
+        "Generic STEM passion without specific examples",
+        "Focus on prestige/rankings rather than fit",
+        "Competition/winning focus over problem-solving",
+        "Tech solutionism without considering social impact"
+      ],
+      "tone": "Authentic, humble, excited about problems not prestige, curious, collaborative, technically literate but not pretentious"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts that show problem-solving, collaboration, or growth through making/building",
+      "supplements": [
+        {
+          "prompt": "Describe the world you come from (for example, your family, school, community, city, or town). How has that world shaped your dreams and aspirations?",
+          "words": 250,
+          "focus": "Community context that shaped your approach to technology/science/problem-solving. Not generic immigrant story but specific about how environment influenced perspective."
+        },
+        {
+          "prompt": "MIT students work to improve their communities in different ways, from tackling the world's biggest challenges to being a good friend. Describe one way you have collaborated with others to effect positive change.",
+          "words": 200,
+          "focus": "Collaboration emphasis critical - MIT values teamwork. Show tangible community impact, not just leadership. Can be small-scale if genuine."
+        },
+        {
+          "prompt": "Tell us about something you do simply for the pleasure of it.",
+          "words": 200,
+          "focus": "Joy in making/creating for its own sake. Shows you're not just achievement-driven. Can be technical or not - genuine passion matters."
+        },
+        {
+          "prompt": "Which department or program at MIT appeals to you and why?",
+          "words": 100,
+          "focus": "Be specific - name actual labs, professors, programs (CSAIL, Media Lab, D-Lab, etc.). Show you've researched fit beyond rankings."
+        }
+      ]
+    },
+    "example_admits": [
+      "Built inventory system for family restaurant - practical problem solving for real need",
+      "Started CS club at under-resourced school - education access and teaching",
+      "Developed low-cost medical devices for developing countries - tech for social good",
+      "Created assistive technology for disabled sibling - personal motivation, real impact",
+      "Founded makerspace teaching fabrication to community - democratizing access to tools"
+    ]
+  },
+
+  "Harvard": {
+    "name": "Harvard University",
+    "location": "Cambridge, MA",
+    "values": [
+      "Intellectual curiosity and love of learning",
+      "Leadership with impact and purpose",
+      "Learning from failure and setbacks",
+      "Diverse perspectives and experiences",
+      "Character, integrity, and contribution to community",
+      "Excellence across multiple domains"
+    ],
+    "culture": "Intellectually rigorous, socially conscious, emphasis on leadership and service, residential house system, tradition and innovation",
+    "essay_preferences": {
+      "style": "Thoughtful and introspective, demonstrates genuine intellectual engagement, shows growth through reflection, humble achiever",
+      "what_works": [
+        "Deep dive into one meaningful experience rather than surface-level many",
+        "Intellectual curiosity evident through questions asked, not just answers found",
+        "Leadership through service and empowering others, not titles",
+        "Authentic reflection on failure and what you learned",
+        "Connecting ideas across disciplines",
+        "Growth mindset and openness to being challenged",
+        "Contributing to community in meaningful ways",
+        "Overcoming adversity with resilience and perspective"
+      ],
+      "red_flags": [
+        "Resume rehashing without reflection or insight",
+        "Trying too hard to impress with vocabulary or achievements",
+        "Generic community service without depth or genuine engagement",
+        "Surface-level analysis without intellectual rigor",
+        "Listing achievements without showing growth or learning",
+        "Focus on prestige/status over genuine curiosity",
+        "Arrogance or inability to acknowledge limitations",
+        "Avoiding difficult topics or showing no vulnerability"
+      ],
+      "tone": "Intellectually engaged, reflective, humble but confident, curious, thoughtful about impact on others"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about challenge/failure, intellectual curiosity, or growth work well",
+      "supplements": [
+        {
+          "prompt": "Harvard has long recognized the importance of enrolling a diverse student body. How will the life experiences that shape who you are today enable you to contribute to Harvard?",
+          "words": 200,
+          "focus": "Unique perspective from your background. Not about overcoming hardship Olympics but genuine contribution you'd make. Specific about what you'd add to community."
+        },
+        {
+          "prompt": "Describe a topic, idea, or concept you find so engaging that it makes you lose all track of time. Why does it captivate you? What or who do you turn to when you want to learn more?",
+          "words": 200,
+          "focus": "Intellectual passion and depth of engagement. Show how you pursue learning beyond classroom. Curiosity-driven, not achievement-driven."
+        },
+        {
+          "prompt": "Briefly describe any of your extracurricular activities, employment experience, travel, or family responsibilities that have shaped who you are.",
+          "words": 150,
+          "focus": "Can be brief and specific. Quality over quantity. Show impact and growth, not just participation."
+        }
+      ]
+    },
+    "example_admits": [
+      "Founded mentorship program after brother's death - leadership through loss, sustained impact",
+      "Data analysis on community violence patterns - intellectual approach to social issue",
+      "Debate champion who uses evidence-based argumentation - intellectual rigor applied",
+      "Oral history project with survivors - preserving memory, connecting past to present",
+      "Research combining multiple disciplines to address complex problem"
+    ]
+  },
+
+  "Stanford": {
+    "name": "Stanford University",
+    "location": "Stanford, CA",
+    "values": [
+      "Innovation and entrepreneurial thinking",
+      "Intellectual vitality and curiosity",
+      "Making meaningful impact at scale",
+      "Ambitious vision balanced with humility",
+      "Interdisciplinary collaboration",
+      "Global perspective and social responsibility"
+    ],
+    "culture": "Entrepreneurial, optimistic, interdisciplinary, collaborative, work-hard-play-hard, innovation-focused, socially conscious tech hub",
+    "essay_preferences": {
+      "style": "Ambitious vision grounded in real work, authentic humility, intellectually adventurous, optimistic but realistic about challenges",
+      "what_works": [
+        "Building something from scratch with measurable impact",
+        "Bold ideas backed by concrete execution and results",
+        "Interdisciplinary approaches that combine multiple fields",
+        "Entrepreneurial thinking applied to social problems",
+        "Global or societal impact focus beyond personal benefit",
+        "Intellectual risk-taking and innovation",
+        "Bringing people together to solve problems",
+        "Learning from failure in pursuit of ambitious goals"
+      ],
+      "red_flags": [
+        "Ideas without execution or tangible results",
+        "Silicon Valley clichés and startup buzzwords",
+        "Arrogance, entitlement, or lack of self-awareness",
+        "Following trends without authentic passion",
+        "Prestige-chasing or status-seeking behavior",
+        "Individual achievement focus without collaboration",
+        "Tech solutionism without considering human impact",
+        "Vague aspirations without concrete steps taken"
+      ],
+      "tone": "Optimistic, entrepreneurial, intellectually ambitious but grounded, collaborative, humble confidence, socially conscious"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about gratitude, accomplishment, or passion work well for showing values",
+      "supplements": [
+        {
+          "prompt": "The Stanford community is deeply curious. Reflect on an idea or experience that makes you genuinely excited about learning.",
+          "words": 250,
+          "focus": "Intellectual vitality - show genuine curiosity and love of learning. Not about achievement but about excitement for ideas. Depth matters more than breadth."
+        },
+        {
+          "prompt": "Virtually all of Stanford's undergraduates live on campus. Write a note to your future roommate that reveals something about you or that will help your roommate—and us—get to know you better.",
+          "words": 250,
+          "focus": "Personality, authenticity, what you'd be like as community member. Can be quirky or serious. Should feel like actual letter, not essay. Show who you are when not trying to impress."
+        },
+        {
+          "prompt": "What is the most significant challenge that society faces today?",
+          "words": 50,
+          "focus": "Clear thinking, global awareness, ability to synthesize complex issues. Not looking for 'right' answer but thoughtful perspective."
+        }
+      ]
+    },
+    "example_admits": [
+      "Kinetic sculptures combining art, robotics, and biomimicry - interdisciplinary innovation",
+      "Founded medical device startup for affordable prosthetics - entrepreneurship for impact",
+      "App connecting local businesses with community resources - practical social innovation",
+      "Research combining CS and public health to address disparities - interdisciplinary impact",
+      "Environmental justice work combining science, policy, and organizing"
+    ]
+  },
+
+  "Yale": {
+    "name": "Yale University",
+    "location": "New Haven, CT",
+    "values": [
+      "Intellectual curiosity and exploration",
+      "Community contribution and engagement",
+      "Questioning assumptions and critical thinking",
+      "Interdisciplinary learning",
+      "Leadership through service",
+      "Global citizenship"
+    ],
+    "culture": "Residential college system, intellectual but social, tradition meets activism, strong arts/humanities, interdisciplinary, politically engaged",
+    "essay_preferences": {
+      "style": "Reflective, shows how you think and question, connects ideas across domains, intellectually adventurous, thoughtful citizen",
+      "what_works": [
+        "Questioning assumptions or challenging beliefs",
+        "Intellectual risk-taking and exploration",
+        "Connecting disparate ideas or disciplines",
+        "Deep community engagement beyond surface service",
+        "Growth through intellectual or personal challenge",
+        "Synthesizing multiple perspectives",
+        "Asking important questions even without answers",
+        "Balance of intellectual and civic engagement"
+      ],
+      "red_flags": [
+        "Superficial reflection without depth",
+        "Following conventional wisdom without questioning",
+        "Scattered interests without intellectual depth",
+        "Generic community service without meaningful engagement",
+        "Intellectual timidity or avoiding complexity",
+        "Prestige focus over genuine curiosity",
+        "Lack of civic/social awareness",
+        "Resume padding without authentic interest"
+      ],
+      "tone": "Intellectually curious, reflective, engaged citizen, thoughtful questioner, open to complexity, socially conscious"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about questioning beliefs, intellectual engagement, or community work well",
+      "supplements": [
+        {
+          "prompt": "What is it about Yale that has led you to apply?",
+          "words": 200,
+          "focus": "Specific programs, residential colleges, interdisciplinary opportunities. Show you understand Yale's culture and why you'd thrive. Not just prestige."
+        },
+        {
+          "prompt": "Yale's residential colleges regularly host conversations with guests representing a wide range of experiences and accomplishments. What person, past or present, would you invite to speak? What would you ask them to discuss?",
+          "words": 200,
+          "focus": "Intellectual interests and curiosity. Shows what you care about and questions you want to explore. Can be unconventional choice if well-justified."
+        }
+      ]
+    },
+    "example_admits": [
+      "Climate activist using rigorous scientific research to inform advocacy",
+      "Student who questioned religious tradition while exploring philosophical implications",
+      "Translator of poetry across languages exploring meaning and culture",
+      "Researcher examining intersection of history, identity, and policy",
+      "Artist exploring social justice themes through interdisciplinary work"
+    ]
+  },
+
+  "Princeton": {
+    "name": "Princeton University",
+    "location": "Princeton, NJ",
+    "values": [
+      "Service to others and community",
+      "Collaboration over individual achievement",
+      "Sustained commitment and depth",
+      "Academic excellence with purpose",
+      "Undergraduate focus and mentorship",
+      "Making a lasting difference"
+    ],
+    "culture": "Strong undergraduate focus, service ethos, eating clubs, tight-knit community, collaborative, grade deflation (historically), junior papers/senior thesis",
+    "essay_preferences": {
+      "style": "Humble but impactful, shows sustained dedication over time, community-minded, servant leadership, depth over breadth",
+      "what_works": [
+        "Long-term commitment to single cause or community",
+        "Service with measurable, sustained impact",
+        "Collaborative achievements that empowered others",
+        "Leadership that elevated team not self",
+        "Using education and privilege to help others",
+        "Deep engagement rather than broad participation",
+        "Mentorship and teaching others",
+        "Work that continued beyond initial requirement"
+      ],
+      "red_flags": [
+        "Self-aggrandizing or seeking personal credit",
+        "Scattered involvement without sustained commitment",
+        "Service as resume-building without genuine care",
+        "Individual glory focus over team/community success",
+        "Prestige-chasing or status-seeking",
+        "Short-term projects without lasting impact",
+        "Leadership focused on titles not service",
+        "Lack of humility or perspective"
+      ],
+      "tone": "Humble servant leader, committed to community, collaborative, purposeful, grounded, focused on impact over recognition"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about service, collaboration, sustained commitment work well",
+      "supplements": [
+        {
+          "prompt": "Princeton values community and encourages students to learn from and grow with others. Describe one way you have contributed to a community that matters to you. What did you learn from this experience?",
+          "words": 250,
+          "focus": "Sustained community engagement with depth. Not about leading but contributing. Show what you learned from community as much as what you gave. Mutuality important."
+        },
+        {
+          "prompt": "Princeton has a longstanding commitment to understanding our responsibility to society through service and civic engagement. How does your own story intersect with these ideals?",
+          "words": 250,
+          "focus": "Service ethos is central to Princeton. Show how service connects to your values and background. Not generic but rooted in your specific experiences and community."
+        }
+      ]
+    },
+    "example_admits": [
+      "Organized telemedicine program for rural elderly - sustained service addressing real need",
+      "Multi-year volunteer with reentry program - long-term commitment to justice",
+      "Tenants' rights organizer in own neighborhood - service to own community",
+      "Founded mutual aid network during pandemic - collaborative community care",
+      "Health equity advocate working with specific underserved population over time"
+    ]
+  },
+
+  "Columbia": {
+    "name": "Columbia University",
+    "location": "New York, NY",
+    "values": [
+      "Intellectual exploration through Core Curriculum",
+      "Urban engagement and NYC connection",
+      "Diverse perspectives and global citizenship",
+      "Questioning and critical analysis",
+      "Taking advantage of city resources",
+      "Social justice and activism"
+    ],
+    "culture": "Urban campus, Core Curriculum, politically engaged, diverse, fast-paced, NYC opportunities, social justice focus, intense academics",
+    "essay_preferences": {
+      "style": "Intellectually engaged, cosmopolitan, shows comfort with diversity and urban environment, critical thinker, socially aware",
+      "what_works": [
+        "Urban engagement and using city resources",
+        "Connecting different worlds, communities, or ideas",
+        "Intellectual curiosity across disciplines",
+        "Social justice work with critical analysis",
+        "Comfort with diversity and different perspectives",
+        "Independent navigation of complex environments",
+        "Journalism, activism, or public engagement",
+        "Global awareness and cosmopolitan outlook"
+      ],
+      "red_flags": [
+        "Suburban/sheltered perspective without growth",
+        "Intellectual narrowness or single-discipline focus",
+        "Lack of engagement with diversity or difference",
+        "Avoiding difficult social/political topics",
+        "Need for hand-holding or structure",
+        "Discomfort with urban environment",
+        "Apolitical or socially unaware stance",
+        "Focus on campus bubble over NYC engagement"
+      ],
+      "tone": "Cosmopolitan, intellectually adventurous, socially aware, comfortable with complexity and diversity, urban-savvy, critical thinker"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about intellectual curiosity, diverse experiences, or urban engagement",
+      "supplements": [
+        {
+          "prompt": "Why are you interested in attending Columbia University? We encourage you to consider the aspect(s) that you find unique and compelling about Columbia.",
+          "words": 200,
+          "focus": "Core Curriculum, NYC location, specific programs. Show you understand urban campus life and Core's intensive humanities focus. Not just prestige or location."
+        },
+        {
+          "prompt": "List the titles of the books, essays, poetry, short stories or plays you read outside of academic courses that you enjoyed most during secondary/high school.",
+          "words": 150,
+          "focus": "Intellectual curiosity and reading breadth. Should reflect genuine interests. Can be eclectic. Shows engagement with ideas beyond assigned reading."
+        }
+      ]
+    },
+    "example_admits": [
+      "Documentary filmmaker on immigrant small businesses in urban neighborhood",
+      "Investigative journalist exposing local government issues",
+      "Urban planning researcher examining gentrification in own community",
+      "Student navigating multiple cultural/linguistic worlds in city",
+      "Activist organizing around urban issues like housing or transportation"
+    ]
+  },
+
+  "Penn": {
+    "name": "University of Pennsylvania",
+    "location": "Philadelphia, PA",
+    "values": [
+      "Pre-professional ambition with liberal arts foundation",
+      "Interdisciplinary collaboration (One University)",
+      "Practical application and real-world impact",
+      "Entrepreneurship and innovation",
+      "Service to community (Penn Compact)",
+      "Intellectual and professional excellence"
+    ],
+    "culture": "Pre-professional but intellectual, social, Wharton influence, interdisciplinary programs, urban engagement, strong alumni network, work hard/play hard",
+    "essay_preferences": {
+      "style": "Career-focused but not narrowly so, shows initiative and leadership, practical impact orientation, interdisciplinary interests, professionally ambitious",
+      "what_works": [
+        "Started something with measurable results",
+        "Entrepreneurial thinking (business or social)",
+        "Real-world application of academic interests",
+        "Leadership with tangible outcomes",
+        "Interdisciplinary approaches to problems",
+        "Professional experience or initiative",
+        "Using resources to create opportunities",
+        "Balance of academic and practical skills"
+      ],
+      "red_flags": [
+        "Purely academic focus without application",
+        "Vague career aspirations without concrete steps",
+        "Lack of initiative or leadership",
+        "Single-discipline focus (Penn values interdisciplinary)",
+        "Prestige-seeking without substance",
+        "Theoretical without practical grounding",
+        "Inability to articulate why Penn specifically",
+        "No evidence of entrepreneurial/leadership mindset"
+      ],
+      "tone": "Professionally ambitious but intellectually curious, practical, entrepreneurial, interdisciplinary, leadership-oriented, results-focused"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about accomplishment, initiative, or leadership work well",
+      "supplements": [
+        {
+          "prompt": "How will you explore your intellectual and academic interests at the University of Pennsylvania? Considering the undergraduate school you've selected, how will you pursue those interests at Penn?",
+          "words": 300,
+          "focus": "Be specific to your school (Wharton, Engineering, Nursing, College). Show understanding of interdisciplinary opportunities (dual degrees, Huntsman, etc.). Connect academic interests to career goals. Research specific programs."
+        }
+      ]
+    },
+    "example_admits": [
+      "Founded biotech startup creating affordable medical devices - entrepreneurship with impact",
+      "Student combining business and engineering for social enterprise",
+      "Research in oncology lab while volunteering as hospital interpreter - healthcare focus",
+      "Founded nonprofit connecting businesses with charities - practical social impact",
+      "Impact investing research combined with community development work"
+    ]
+  },
+
+  "Brown": {
+    "name": "Brown University",
+    "location": "Providence, RI",
+    "values": [
+      "Open Curriculum and intellectual freedom",
+      "Self-directed learning and responsibility",
+      "Unconventional thinking and paths",
+      "Interdisciplinary exploration",
+      "Social justice and activism",
+      "Student agency and voice"
+    ],
+    "culture": "Progressive, student-driven, creative, interdisciplinary, activist, quirky, open curriculum, pass/fail option, alternative approaches",
+    "essay_preferences": {
+      "style": "Intellectually independent, shows self-direction, unconventional but substantive, demonstrates readiness for Open Curriculum freedom",
+      "what_works": [
+        "Unique intellectual paths or combinations",
+        "Self-directed learning beyond traditional classroom",
+        "Interdisciplinary interests that don't fit boxes",
+        "Intellectual risk-taking and exploration",
+        "Independent projects driven by curiosity",
+        "Social justice work with creative approaches",
+        "Ability to design own learning path",
+        "Questioning educational norms constructively"
+      ],
+      "red_flags": [
+        "Need for heavy structure or guidance",
+        "Inability to articulate specific interests",
+        "Following conventional paths without questioning",
+        "Lack of intellectual curiosity beyond requirements",
+        "Pre-professional focus without intellectual breadth",
+        "Conformity or risk-aversion",
+        "Inability to take advantage of freedom responsibly",
+        "Vague 'I want to explore everything' without depth"
+      ],
+      "tone": "Intellectually independent, creative, self-directed, comfortable with ambiguity, intellectually adventurous, socially conscious, quirky authenticity"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about questioning beliefs, intellectual curiosity, or unconventional paths",
+      "supplements": [
+        {
+          "prompt": "Brown's Open Curriculum allows students to explore broadly while also diving deeply into their academic pursuits. Tell us about any academic interests that excite you, and how you might use the Open Curriculum to pursue them while also embracing topics with which you are unfamiliar.",
+          "words": 250,
+          "focus": "Show specific academic interests AND readiness to explore beyond them. Not 'I want to try everything' but thoughtful about how freedom serves your goals. Show understanding of Open Curriculum philosophy."
+        }
+      ]
+    },
+    "example_admits": [
+      "Linguistics student learning 6 languages self-taught - intellectual independence",
+      "Student combining sustainable agriculture with food justice - interdisciplinary",
+      "Artist exploring gender studies through unconventional media - creative scholarship",
+      "Created own curriculum around code-switching research - self-directed learning",
+      "Philosophy student applying critical theory to disability rights - unconventional combination"
+    ]
+  },
+
+  "Dartmouth": {
+    "name": "Dartmouth College",
+    "location": "Hanover, NH",
+    "values": [
+      "Tight-knit community and collaboration",
+      "Outdoor leadership and adventure",
+      "Undergraduate focus and mentorship",
+      "Global learning (D-Plan, study abroad)",
+      "Service and giving back",
+      "Intimate learning environment"
+    ],
+    "culture": "Rural campus, outdoor activities, D-Plan quarter system, strong alumni network, intimate community, outdoorsy, traditions, collaborative not competitive",
+    "essay_preferences": {
+      "style": "Personal and authentic, shows community-mindedness, demonstrates fit for small tight-knit environment, collaborative spirit, outdoor/adventure when relevant",
+      "what_works": [
+        "Close-knit community experiences",
+        "Outdoor adventures or leadership",
+        "Mentorship and learning from others",
+        "Collaborative achievements",
+        "Intimate settings where you thrived",
+        "Service to specific community",
+        "Teaching or guiding others",
+        "Comfort with rural/nature settings"
+      ],
+      "red_flags": [
+        "Need for big city environment",
+        "Preference for anonymity over community",
+        "Competitive rather than collaborative mindset",
+        "Lack of outdoor/nature engagement (not required but valued)",
+        "Inability to articulate fit for small school",
+        "Focus on prestige over community",
+        "Preference for large lectures over discussion",
+        "No evidence of community contribution"
+      ],
+      "tone": "Warm, community-minded, collaborative, authentic, comfortable with intimacy and nature, adventurous spirit, humble"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about community, collaboration, personal growth work well",
+      "supplements": [
+        {
+          "prompt": "What excites you most about the idea of being part of Dartmouth's community?",
+          "words": 250,
+          "focus": "Show understanding of Dartmouth's intimate community culture. Specific about programs, residential life, outdoor opportunities. Why small school appeals. Community over prestige."
+        }
+      ]
+    },
+    "example_admits": [
+      "Backpacking guide for urban youth of color - outdoor leadership with social justice",
+      "Founded refugee hiking club - community building through outdoor activities",
+      "Rock climbing instructor teaching confidence - mentorship through adventure",
+      "Student from small town who thrived in intimate settings - fit for community",
+      "Environmental conservation work with local community focus"
+    ]
+  },
+
+  "Cornell": {
+    "name": "Cornell University",
+    "location": "Ithaca, NY",
+    "values": [
+      "Practical application and hands-on learning",
+      "Specific passions and deep expertise",
+      "Diverse interests within focused area",
+      "Research and experiential learning",
+      "Public mission (land-grant university)",
+      "Any person, any study philosophy"
+    ],
+    "culture": "Large Ivy with specialized schools, research-focused, practical/applied emphasis, diverse student body, gorges and nature, work-hard culture, preprofessional tracks",
+    "essay_preferences": {
+      "style": "Shows deep expertise in area of interest, practical/applied focus, demonstrates hands-on experience, research-oriented, clear about why specific school/major",
+      "what_works": [
+        "Deep knowledge and experience in intended field",
+        "Hands-on practical work (lab, field, internship)",
+        "Research experience or interest",
+        "Specific career goals with clear path",
+        "Applied learning over purely theoretical",
+        "Expertise developed over time",
+        "Connection between interests and Cornell's specific programs",
+        "Public service or practical impact orientation"
+      ],
+      "red_flags": [
+        "Vague or uncertain about major/interests",
+        "Lack of hands-on experience in stated interest area",
+        "Purely theoretical without application",
+        "Generic reasons for attending Cornell",
+        "Inability to articulate fit with specific school (Hotel, Agriculture, etc.)",
+        "Scattered interests without depth in any area",
+        "No research interest or experience",
+        "Treating Cornell as backup Ivy"
+      ],
+      "tone": "Knowledgeable about field, practical-minded, research-oriented, clear career focus, hands-on learner, grounded"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about passion, expertise, or hands-on experience work well",
+      "supplements": [
+        {
+          "prompt": "How have your interests and related experiences influenced your selection of major?",
+          "words": 300,
+          "focus": "Be very specific to your intended school and major. Show depth of experience and knowledge. Connect past experiences to future goals at Cornell. Research specific programs and professors."
+        }
+      ]
+    },
+    "example_admits": [
+      "Agricultural science research with farmworker family background - practical expertise",
+      "Food science student with nutrition education work - applied knowledge",
+      "Hotel management interest with restaurant industry experience - hands-on learning",
+      "Engineering student with sustained robotics and research - technical depth",
+      "Veterinary interest with years of animal care experience - field-specific knowledge"
+    ]
+  },
+
+  "Duke": {
+    "name": "Duke University",
+    "location": "Durham, NC",
+    "values": [
+      "Service and social impact",
+      "Leadership through action",
+      "Collaborative spirit (teamwork)",
+      "Southern engagement and regional identity",
+      "Excellence in academics, service, and character",
+      "Balance of intellectual and personal growth"
+    ],
+    "culture": "Southern warmth meets academic rigor, service-oriented, athletic/school spirit, Research Triangle, collaborative, engaged with Durham community, balanced students",
+    "essay_preferences": {
+      "style": "Warm and approachable, service-focused, demonstrates leadership through impact not titles, team player, Southern engagement appreciated",
+      "what_works": [
+        "Sustained service with clear community impact",
+        "Leadership that empowered team",
+        "Engagement with Southern communities/issues",
+        "Collaboration and teamwork emphasized",
+        "Balance of academic excellence and character",
+        "Working across differences",
+        "Service addressing real community needs",
+        "Mentorship and supporting others"
+      ],
+      "red_flags": [
+        "Individual achievement focus over team",
+        "Service without genuine engagement or impact",
+        "Leadership focused on titles not results",
+        "Lack of community awareness or involvement",
+        "Arrogance or lack of humility",
+        "Purely academic focus without service dimension",
+        "Competitive rather than collaborative mindset",
+        "No connection to place or community"
+      ],
+      "tone": "Warm, service-oriented, collaborative, humble leader, community-minded, balanced achiever, genuine kindness"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about service, overcoming obstacles, or leadership work well",
+      "supplements": [
+        {
+          "prompt": "What is your sense of Duke as a university and a community, and why do you consider it a good match for you?",
+          "words": 250,
+          "focus": "Show understanding of Duke's service focus and collaborative culture. Connect to specific programs, DukeEngage, community engagement. Why Durham and region matters."
+        }
+      ]
+    },
+    "example_admits": [
+      "Advocated for dyslexic students, changed district policy - service through systems change",
+      "Community health outreach in underserved neighborhoods - service with impact",
+      "Founded creative writing club focused on accessibility - inclusion through leadership",
+      "Volunteers at free clinic while researching health disparities - service plus scholarship",
+      "Youth sports coach in under-resourced community - mentorship and service"
+    ]
+  },
+
+  "Northwestern": {
+    "name": "Northwestern University",
+    "location": "Evanston, IL (Chicago access)",
+    "values": [
+      "Interdisciplinary collaboration",
+      "Practical application and experiential learning",
+      "Journalism and storytelling excellence",
+      "Performance and arts integration",
+      "Professional preparation with liberal arts foundation",
+      "Chicago connection and opportunities"
+    ],
+    "culture": "Quarter system, interdisciplinary programs, strong journalism/theater/music, pre-professional but intellectual, Chicago opportunities, Big Ten spirit, work hard/play hard",
+    "essay_preferences": {
+      "style": "Shows initiative and ambition, interdisciplinary interests, storytelling ability when relevant, demonstrates how you'll use resources, professional goals with intellectual foundation",
+      "what_works": [
+        "Interdisciplinary projects combining multiple fields",
+        "Journalism, media, or storytelling experience",
+        "Performance/arts combined with other interests",
+        "Initiative in creating opportunities",
+        "Professional experience or skills",
+        "Using resources creatively",
+        "Clear goals with flexible path",
+        "Collaboration across disciplines"
+      ],
+      "red_flags": [
+        "Single-track thinking without interdisciplinary interest",
+        "Vague career goals without any grounding",
+        "Lack of initiative or self-direction",
+        "No evidence of using available resources",
+        "Purely academic without practical dimension",
+        "Inability to articulate specific Northwestern fit",
+        "Generic interest in Chicago without specifics",
+        "No evidence of interdisciplinary thinking"
+      ],
+      "tone": "Ambitious, interdisciplinary, storyteller when relevant, resourceful, initiative-taking, professionally minded but intellectually curious"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about passion, initiative, or interdisciplinary interests",
+      "supplements": [
+        {
+          "prompt": "How will you make use of Northwestern's resources to further your interests and goals? Describe your reasons for applying to the specific school(s) you've selected.",
+          "words": 300,
+          "focus": "Be very specific about programs, combined degrees, Chicago opportunities. Show you understand Northwestern's interdisciplinary culture. Research specific resources and explain how you'll use them."
+        }
+      ]
+    },
+    "example_admits": [
+      "Theater director exploring Asian American stories - arts plus identity",
+      "Investigative journalist on school/community issues - journalism passion",
+      "Bilingual reporter covering immigration - storytelling for community",
+      "Radio producer preserving oral histories - audio storytelling with purpose",
+      "Student combining business and social impact through concrete projects"
+    ]
+  },
+
+  "Vanderbilt": {
+    "name": "Vanderbilt University",
+    "location": "Nashville, TN",
+    "values": [
+      "Southern culture and community",
+      "Service and civic engagement",
+      "Collaborative and supportive environment",
+      "Balance of academic excellence and social life",
+      "Nashville connection and opportunities",
+      "Diversity within Southern context"
+    ],
+    "culture": "Southern hospitality, collaborative not competitive, strong community, Nashville music/culture, balanced social/academic life, service-oriented, residential colleges",
+    "essay_preferences": {
+      "style": "Warm and personal, shows Southern cultural awareness or appreciation, community-minded, balanced achiever, genuine and approachable",
+      "what_works": [
+        "Connection to Southern culture, music, or community",
+        "Service work with clear community impact",
+        "Collaborative achievements and team focus",
+        "Balance of academics with personal interests",
+        "Nashville-specific opportunities that excite you",
+        "Community building and relationship focus",
+        "Cultural heritage and identity exploration",
+        "Hospitality and welcoming others"
+      ],
+      "red_flags": [
+        "Dismissive of Southern culture or context",
+        "Purely academic focus without community dimension",
+        "Competitive rather than collaborative mindset",
+        "Lack of interest in Nashville or region",
+        "Inability to articulate why Vanderbilt specifically",
+        "No evidence of service or community involvement",
+        "Arrogance or exclusivity",
+        "Generic application without Southern connection"
+      ],
+      "tone": "Warm, community-minded, culturally aware, collaborative, service-oriented, balanced, genuine Southern connection or appreciation"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about community, culture, or personal growth",
+      "supplements": [
+        {
+          "prompt": "What more would you like to share about your culture, community, or background?",
+          "words": 250,
+          "focus": "Can focus on Southern culture, family heritage, community identity. Show what unique perspective you bring. Cultural understanding matters."
+        }
+      ]
+    },
+    "example_admits": [
+      "Appalachian student documenting coal mining oral histories - cultural preservation",
+      "Gospel singer connecting music to Civil Rights history - Southern traditions",
+      "Latino student documenting 'New South' demographic changes - contemporary South",
+      "Student exploring rural healthcare challenges - Southern community service",
+      "Music student engaged with Nashville's cultural scene"
+    ]
+  },
+
+  "Carnegie Mellon": {
+    "name": "Carnegie Mellon University",
+    "location": "Pittsburgh, PA",
+    "values": [
+      "Interdisciplinary innovation (CS + X)",
+      "Maker culture and hands-on creation",
+      "Design thinking and human-centered approaches",
+      "Cutting-edge technology with artistic creativity",
+      "Collaborative problem-solving",
+      "Practical application and building things"
+    ],
+    "culture": "STEM-focused with strong arts, intense academics, maker/builder culture, interdisciplinary programs, collaborative projects, work-hard culture, Pittsburgh opportunities",
+    "essay_preferences": {
+      "style": "Technical sophistication with creative dimension, shows building/making things, interdisciplinary approaches especially tech+arts, human-centered design thinking",
+      "what_works": [
+        "Projects combining technology with other fields (art, social science, etc.)",
+        "Building and making things (apps, robots, games, installations)",
+        "Human-centered design and user experience focus",
+        "Interdisciplinary approaches to problems",
+        "Technical skills applied creatively",
+        "Research or creation that bridges disciplines",
+        "Portfolio of things you've built",
+        "Using technology thoughtfully to solve human problems"
+      ],
+      "red_flags": [
+        "Purely theoretical without building/making",
+        "Single-discipline focus (CMU values interdisciplinary)",
+        "Technical work without considering human impact",
+        "Lack of creative or artistic dimension",
+        "No portfolio or evidence of making things",
+        "Inability to articulate interdisciplinary interests",
+        "Following tutorials without creating original work",
+        "Tech without design thinking or UX awareness"
+      ],
+      "tone": "Technical but creative, interdisciplinary, maker mentality, design-conscious, innovation-focused, builder mindset"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about passion, making things, or interdisciplinary interests",
+      "supplements": [
+        {
+          "prompt": "Why Carnegie Mellon? Please describe your reasons for applying to the specific school(s) you've selected.",
+          "words": 250,
+          "focus": "Be specific to your school (SCS, CFA, Engineering, etc.). Emphasize interdisciplinary programs. Show understanding of maker culture. Specific projects or labs you want to work with."
+        }
+      ]
+    },
+    "example_admits": [
+      "AI researcher examining algorithmic bias - tech ethics with social justice",
+      "Game designer creating empathy-building games - tech plus social impact",
+      "Urban designer using tech to solve community problems - design thinking applied",
+      "Student combining CS with art for interactive installations - interdisciplinary creation",
+      "Robotics student focused on assistive technology - human-centered engineering"
+    ]
+  },
+
+  "UChicago": {
+    "name": "University of Chicago",
+    "location": "Chicago, IL",
+    "values": [
+      "Love of ideas for their own sake",
+      "Intellectual rigor and debate",
+      "Questioning everything (including ourselves)",
+      "Uncommon perspectives and approaches",
+      "Life of the mind",
+      "Core Curriculum and great books"
+    ],
+    "culture": "Where fun comes to die (but not really), intellectual intensity, argument culture, quirky, theoretical emphasis, Core Curriculum, house system, Chicago's South Side",
+    "essay_preferences": {
+      "style": "Intellectually rigorous, loves complexity and difficulty, questions assumptions, unafraid of being wrong, quirky and unconventional thinking celebrated",
+      "what_works": [
+        "Deep intellectual engagement with difficult ideas",
+        "Philosophical questioning and analysis",
+        "Unconventional thinking that's substantive not gimmicky",
+        "Loving difficulty and complexity",
+        "Ideas that genuinely excite you",
+        "Arguing positions even if uncomfortable",
+        "Theoretical interests alongside practical",
+        "Reading widely and thinking deeply"
+      ],
+      "red_flags": [
+        "Purely pre-professional focus without intellectual curiosity",
+        "Avoiding intellectual challenge or difficulty",
+        "Surface-level thinking or obvious conclusions",
+        "Trying to provide 'right' answer rather than thinking",
+        "Anti-intellectual attitude or philistinism",
+        "Need for clear practical application of everything",
+        "Uncomfortable with ambiguity or debate",
+        "Conventional thinking without questioning"
+      ],
+      "tone": "Intellectually fearless, loves ideas and arguments, comfortable with being wrong, quirky but rigorous, theoretical but engaged"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about questioning beliefs or intellectual curiosity",
+      "supplements": [
+        {
+          "prompt": "How does the University of Chicago, as you know it now, satisfy your desire for a particular kind of learning, community, and future?",
+          "words": 250,
+          "focus": "Show love of ideas and intellectual challenge. Understand Core Curriculum's intensity. Demonstrate fit for argument culture and theoretical emphasis. Specific about intellectual community."
+        }
+      ]
+    },
+    "example_admits": [
+      "Philosophy student exploring chronic illness and embodiment - theoretical depth",
+      "Student questioning religious tradition through philosophical frameworks - intellectual rigor",
+      "Researcher examining postcolonial development theories - critical theory applied",
+      "Debate competitor who loves arguing all sides - intellectual flexibility",
+      "Student reading political philosophy and applying to contemporary issues"
+    ]
+  },
+
+  "Caltech": {
+    "name": "California Institute of Technology",
+    "location": "Pasadena, CA",
+    "values": [
+      "Scientific excellence and rigor",
+      "Collaborative research focus",
+      "Honor code and integrity",
+      "Small, tight-knit STEM community",
+      "Hands-on research from day one",
+      "Pure science and fundamental understanding"
+    ],
+    "culture": "Tiny, intense, pure STEM, house system, honor code (take-home exams), research-focused, collaborative, pranks and traditions, all STEM all the time",
+    "essay_preferences": {
+      "style": "Shows deep STEM passion and ability, research experience or interest, collaborative mindset, genuine love of science/math, understands intensity",
+      "what_works": [
+        "Substantial research experience or independent projects",
+        "Deep engagement with STEM beyond school",
+        "Mathematical or scientific thinking demonstrated",
+        "Collaboration in research or academic settings",
+        "Passion for understanding fundamental questions",
+        "Creative pursuits that complement STEM",
+        "Teaching or sharing STEM knowledge",
+        "Resilience and persistence with difficult problems"
+      ],
+      "red_flags": [
+        "Generic STEM interest without depth",
+        "No research experience or independent work",
+        "Competitive rather than collaborative mindset",
+        "Pre-professional focus over pure science",
+        "Inability to articulate specific research interests",
+        "No evidence of going beyond curriculum",
+        "Lack of mathematical sophistication",
+        "Unwillingness to struggle with hard problems"
+      ],
+      "tone": "Passionate about STEM, collaborative, intellectually curious about fundamental questions, persistent, research-oriented, comfortable with intensity"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about intellectual passion, problem-solving, or STEM engagement",
+      "supplements": [
+        {
+          "prompt": "Please describe your interest in Caltech's areas of study and your future career goals. What academic areas are you interested in exploring at Caltech?",
+          "words": 200,
+          "focus": "Be specific about research areas. Show understanding of Caltech's pure science focus. Not engineering for engineering's sake but fundamental questions. Name specific fields or problems that fascinate you."
+        },
+        {
+          "prompt": "Caltech students are often known for their sense of humor and creative problem solving. Share something that makes you laugh or brings you joy.",
+          "words": 150,
+          "focus": "Shows personality beyond STEM intensity. Can be science-related or not. Demonstrates you're human and have creative/fun side. Balance to STEM focus."
+        }
+      ]
+    },
+    "example_admits": [
+      "Math prodigy who published research and founded girls' math circle",
+      "Physics student with astronomy research at observatory",
+      "Student who creates math education content showing love of field",
+      "Researcher combining multiple STEM fields (bio + CS, physics + math)",
+      "STEM student with creative pursuit that shows different dimension"
+    ]
+  },
+
+  "Rice": {
+    "name": "Rice University",
+    "location": "Houston, TX",
+    "values": [
+      "Collaborative not competitive culture",
+      "Residential college system and community",
+      "Diverse perspectives and backgrounds",
+      "Balance of academics and quality of life",
+      "Houston connection and opportunities",
+      "Unconventional paths and interdisciplinary work"
+    ],
+    "culture": "Collaborative, residential colleges, happy students, diverse, work-life balance, Houston opportunities, strong science/engineering, small school feel",
+    "essay_preferences": {
+      "style": "Collaborative mindset, shows fit for close-knit community, genuine and approachable, demonstrates how you'll contribute to community, Houston engagement",
+      "what_works": [
+        "Collaborative rather than competitive achievements",
+        "Contribution to tight-knit communities",
+        "Interdisciplinary or unconventional interests",
+        "Balance of academic excellence with other pursuits",
+        "Houston-specific opportunities or connections",
+        "Diverse perspectives or backgrounds",
+        "Teaching and learning from others",
+        "Residential community engagement"
+      ],
+      "red_flags": [
+        "Competitive rather than collaborative mindset",
+        "Inability to articulate why Rice specifically",
+        "No interest in residential college system",
+        "Lack of community involvement or contribution",
+        "Generic application without Houston connection",
+        "Purely academic focus without balance",
+        "Preference for anonymity over community",
+        "Prestige focus over fit and happiness"
+      ],
+      "tone": "Collaborative, community-minded, balanced achiever, genuine, approachable, diverse perspective valued, happy and engaged"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about community, collaboration, or diverse perspectives",
+      "supplements": [
+        {
+          "prompt": "The quality of Rice's academic life and the Residential College System are heavily influenced by the unique life experiences and cultural traditions each student brings. What personal perspectives would you contribute to life at Rice?",
+          "words": 250,
+          "focus": "Show unique perspective from your background. How you'll contribute to residential college community. Not about achievements but about who you are and what you bring to community."
+        }
+      ]
+    },
+    "example_admits": [
+      "Environmental justice researcher in Houston Latino community",
+      "Student combining religious studies with science career",
+      "Collaborative researcher in interdisciplinary field",
+      "Community builder who thrives in intimate settings",
+      "Student with diverse cultural background bringing unique perspective"
+    ]
+  },
+
+  "Emory": {
+    "name": "Emory University",
+    "location": "Atlanta, GA",
+    "values": [
+      "Social justice and ethical leadership",
+      "Global health and service",
+      "Diverse perspectives and inclusion",
+      "Inquiry and engagement with big questions",
+      "Atlanta connection and opportunities",
+      "Courage to ask difficult questions"
+    ],
+    "culture": "Socially conscious, health/service focus, diverse, engaged with Atlanta, moderate size, strong pre-med/health, intellectual but applied, social justice orientation",
+    "essay_preferences": {
+      "style": "Socially conscious, shows engagement with justice/equity issues, global awareness, ethical thinking, demonstrates courage to address difficult topics",
+      "what_works": [
+        "Social justice work with depth and impact",
+        "Global health or service focus",
+        "Addressing health disparities or equity",
+        "Courage to tackle difficult social issues",
+        "Working across differences and building bridges",
+        "Atlanta engagement or connection",
+        "Research with social impact dimension",
+        "Ethical leadership and difficult decisions"
+      ],
+      "red_flags": [
+        "Apolitical or socially unaware stance",
+        "Generic service without social justice lens",
+        "Lack of engagement with diversity or difference",
+        "Avoiding difficult or controversial topics",
+        "Purely academic focus without applied dimension",
+        "No evidence of ethical thinking or courage",
+        "Inability to articulate Emory's social justice mission",
+        "Generic Atlanta interest without specifics"
+      ],
+      "tone": "Socially conscious, ethically engaged, global awareness, courageous in addressing difficult issues, justice-oriented, thoughtful"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about challenges, social issues, or ethical questions",
+      "supplements": [
+        {
+          "prompt": "What academic areas are you interested in exploring at Emory University and why?",
+          "words": 200,
+          "focus": "Connect academic interests to social impact, health equity, or justice. Show understanding of Emory's mission. Atlanta location and resources. Not just career goals but larger purpose."
+        }
+      ]
+    },
+    "example_admits": [
+      "Global health advocate questioning Western savior narratives",
+      "Researcher examining racial health disparities with historical lens",
+      "Student addressing environmental racism in community",
+      "Public health worker focused on equity and access",
+      "Student bridging African and African American health perspectives"
+    ]
+  },
+
+  "Georgetown": {
+    "name": "Georgetown University",
+    "location": "Washington, DC",
+    "values": [
+      "Service to others (Jesuit values)",
+      "Global engagement and perspective",
+      "Social justice and advocacy",
+      "DC opportunities and political engagement",
+      "Faith and reason integration",
+      "Cura personalis (care for the whole person)"
+    ],
+    "culture": "Jesuit values, service-oriented, politically engaged, DC opportunities, international focus, preprofessional tracks (SFS, MSB), social justice mission",
+    "essay_preferences": {
+      "style": "Service-oriented, shows global awareness, politically/socially engaged, demonstrates commitment to justice, understands Jesuit mission even if not Catholic",
+      "what_works": [
+        "Sustained service with clear impact",
+        "Global perspective or international experience",
+        "Social justice advocacy or activism",
+        "Political engagement or policy interest",
+        "DC opportunities that excite you",
+        "Faith journey or ethical questioning (if relevant)",
+        "Working for marginalized communities",
+        "Integrating values with action"
+      ],
+      "red_flags": [
+        "Lack of service commitment or community engagement",
+        "Apolitical stance or social disengagement",
+        "No global awareness or perspective",
+        "Inability to articulate Georgetown's mission",
+        "Generic DC interest without specifics",
+        "Service as resume-building not genuine commitment",
+        "Unwillingness to engage with faith/values questions",
+        "Individual achievement focus over service"
+      ],
+      "tone": "Service-oriented, globally aware, politically engaged, socially conscious, justice-focused, values-driven, thoughtful about faith/ethics"
+    },
+    "prompts": {
+      "common_app_preference": "Prompts about service, global issues, or ethical questions",
+      "supplements": [
+        {
+          "prompt": "Georgetown's commitment to service is embodied in our motto, 'Utraque Unum' or 'For One, For All.' Please reflect on your life and tell us how you have served others.",
+          "words": 250,
+          "focus": "Service is central to Georgetown. Show sustained commitment and impact. Not about hours but about meaning and transformation (yours and community's). Connect to Jesuit mission."
+        }
+      ]
+    },
+    "example_admits": [
+      "Postcolonial scholar questioning international development practices",
+      "Student connecting US foreign policy to migration patterns",
+      "Service worker addressing root causes not just symptoms",
+      "Global health advocate with local community engagement",
+      "Student integrating faith/values with social justice work"
+    ]
+  }
+}

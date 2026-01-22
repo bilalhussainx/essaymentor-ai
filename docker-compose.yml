@@ -1,0 +1,144 @@
+# Docker Compose for EssayMentor AI
+# Full-stack development environment
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: essaymentor
+      POSTGRES_USER: essaymentor
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-devpassword}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U essaymentor"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis for Celery & Django Channels
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Django Backend
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=${SECRET_KEY:-django-insecure-dev-key-change-in-production}
+      - DB_NAME=essaymentor
+      - DB_USER=essaymentor
+      - DB_PASSWORD=${DB_PASSWORD:-devpassword}
+      - DB_HOST=db
+      - DB_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - OLLAMA_HOST=http://ollama:11434
+      - CHROMADB_PATH=/app/chroma_db
+      - ALLOWED_HOSTS=localhost,127.0.0.1,backend
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost
+    volumes:
+      - ./backend:/app/backend
+      - ./agents:/app/agents
+      - ./vector_db:/app/vector_db
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+      - ./university_profiles.json:/app/university_profiles.json
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: >
+      sh -c "
+        cd /app/backend &&
+        python manage.py migrate --noinput &&
+        python manage.py collectstatic --noinput &&
+        daphne -b 0.0.0.0 -p 8000 essaymentor.asgi:application
+      "
+
+  # Celery Worker
+  celery:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=${SECRET_KEY:-django-insecure-dev-key-change-in-production}
+      - DB_NAME=essaymentor
+      - DB_USER=essaymentor
+      - DB_PASSWORD=${DB_PASSWORD:-devpassword}
+      - DB_HOST=db
+      - DB_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - OLLAMA_HOST=http://ollama:11434
+      - CHROMADB_PATH=/app/chroma_db
+    volumes:
+      - ./backend:/app/backend
+      - ./agents:/app/agents
+      - ./vector_db:/app/vector_db
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+      - ./university_profiles.json:/app/university_profiles.json
+    depends_on:
+      - backend
+      - redis
+    command: >
+      sh -c "
+        cd /app/backend &&
+        celery -A essaymentor worker -l INFO
+      "
+
+  # React Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  # Ollama (Local LLM)
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    # Uncomment for GPU support (NVIDIA)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+volumes:
+  postgres_data:
+  redis_data:
+  ollama_data:
